@@ -1,0 +1,117 @@
+:root{
+  --background: #3D348B;
+  --digi1: #F35B04;
+  --digi3: #F18701;
+  --digi2: #F7B801;
+  --digi4: #7678ED;
+  --label:#DADAFB;
+  --level: #7f8c8d;
+  --level-r: #7f8c8d;
+  --white: #fff;
+}
+html {
+    height: 100%;
+    width: 100%;
+  }
+body{
+  padding: 0 10%;
+  margin: 0;
+  background-color: var(--background);
+}
+
+@font-face {
+  font-family: 'Digimon';
+  src: url('../fonts/PixelDigivolve-mOm9.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+/* Fuente del nivel */
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+/* Section digimons */
+  #digimons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    border-radius: 4px;
+    background-color:  var(--background);
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .cabecera{
+    text-align: center;
+    font-family: 'Digimon';
+    padding-top: 100px;
+  }
+  .titulo-principal{
+    font-size: 3rem;
+    color: var(--white);
+  }
+  /* logo digimon en cabecera */
+  .logo{
+    width: 200px;
+    padding-bottom: 30px;
+  }
+  /* Card digimon */
+  .digi {
+    text-align: center;
+
+    border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 38px -16px rgba(39,33,89,0.54);
+  -moz-box-shadow: 10px 10px 38px -16px rgba(39,33,89,0.54);
+  box-shadow: 10px 10px 38px -16px rgba(39,33,89,0.54);
+  padding: 20px;
+  background-color: white;
+  border: 4px solid var(--background);
+  }
+  .digi:hover{
+    transition: 400ms;
+    scale: 1.08;
+    border: 4px solid;
+    border-image: linear-gradient(180deg, var(--digi1), var(--digi2)) 1;
+    border-radius: 10px;
+    /* -webkit-box-shadow: 10px 10px 38px -16px rgba(118,120,237,0.95);
+    -moz-box-shadow: 10px 10px 38px -16px rgba(118,120,237,0.95);
+    box-shadow: 10px 10px 38px -16px rgba(118,120,237,0.95); */
+   -webkit-box-shadow: 10px 10px 38px -16px rgba(247,184,1,0.9);
+    -moz-box-shadow: 10px 10px 38px -16px rgba(247,184,1,0.9);
+    box-shadow: 10px 10px 38px -16px rgba(247,184,1,0.9);
+  }
+  /* Imágen del digimon */
+  .digi img {
+    width: 250px;
+  }
+  /* Título o nombre del digimon */
+.titulo{
+  color: #2c3e50;
+  font-family: 'Digimon';
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  background-image: linear-gradient(180deg,var(--digi2) 0%,var(--digi1) 100%);
+  font-size: 21px;
+}
+/* level */
+.nivel{
+  background-color: var(--label);
+  display: inline;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.categoria{
+  color: var(--background);
+  font-size: 16px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+}
+a:-webkit-any-link{
+  text-decoration: none;
+}
+/* Responsive */
+@media only screen and (max-width: 600px) {
+ .titulo-principal{
+  font-size: 22px;
+ }
+}
